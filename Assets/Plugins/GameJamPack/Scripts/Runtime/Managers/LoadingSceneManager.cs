@@ -2,13 +2,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
-public class ControllerLoadingScene : MonoBehaviour
+public class LoadingSceneManager : MonoBehaviour
 {
 
     [SerializeField, SceneDetails]
     SerializedScene Scene;
 
-    public static ControllerLoadingScene Instance;
+    public static LoadingSceneManager Instance;
 
 
     private void Awake()
@@ -19,7 +19,7 @@ public class ControllerLoadingScene : MonoBehaviour
     {
 
         Load();
-        ControllerGameFlow.Instance.LoadNewScene(Scene.BuildIndex);
+        MainManager.Instance.LoadNewScene(Scene.BuildIndex);
     }
 
 

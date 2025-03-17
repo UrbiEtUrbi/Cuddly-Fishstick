@@ -4,14 +4,12 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class ControllerMainMenu : ControllerLocal
+public class MainMenuManager : LocalManager
 {
 
 
     [SerializeField, SceneDetails]
     SerializedScene Scene;
-
-
 
     public override void Init()
     {
@@ -21,17 +19,6 @@ public class ControllerMainMenu : ControllerLocal
 
     public void OnPlay()
     {
-        ControllerGameFlow.Instance.LoadNewScene(Scene.BuildIndex);
+        MainManager.Instance.LoadNewScene(Scene.BuildIndex);
     }
-
-
-
-
-  
-
-
-
-
-
-
 }

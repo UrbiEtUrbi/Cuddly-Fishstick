@@ -57,23 +57,23 @@ public class PlayerController : MonoBehaviour
      
         m_Rb = GetComponent<Rigidbody2D>();
 
-        if (ControllerInput.Instance != null)
+        if (InputManager.Instance != null)
         {
-            ControllerInput.Instance.Horizontal.AddListener(OnHorizontal);
-            ControllerInput.Instance.Vertical.AddListener(OnVertical);
+            InputManager.Instance.Horizontal.AddListener(OnHorizontal);
+            InputManager.Instance.Vertical.AddListener(OnVertical);
         }
-        ControllerInput.Instance.Attack.AddListener(OnAttack);
+        InputManager.Instance.Attack.AddListener(OnAttack);
     }
 
     void OnDisable()
     {
 
-        if (ControllerInput.Instance != null)
+        if (InputManager.Instance != null)
         {
-            ControllerInput.Instance.Horizontal.RemoveListener(OnHorizontal);
-            ControllerInput.Instance.Vertical.RemoveListener(OnVertical);
+            InputManager.Instance.Horizontal.RemoveListener(OnHorizontal);
+            InputManager.Instance.Vertical.RemoveListener(OnVertical);
         }
-        ControllerInput.Instance.Attack.RemoveListener(OnAttack);
+        InputManager.Instance.Attack.RemoveListener(OnAttack);
 
     }
 

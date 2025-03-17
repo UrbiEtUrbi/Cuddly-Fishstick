@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ControllerGameFlow : GenericSingleton<ControllerGameFlow>
+public class MainManager : GenericSingleton<MainManager>
 {
     private string _currentScene;
 
@@ -40,7 +40,7 @@ public class ControllerGameFlow : GenericSingleton<ControllerGameFlow>
     {
         SceneManager.sceneLoaded -= OnAfterSceneLoaded;
         _currentScene = SceneManager.GetActiveScene().name;
-        var controllerLocal = FindFirstObjectByType<ControllerLocal>();
+        var controllerLocal = FindFirstObjectByType<LocalManager>();
         if (controllerLocal != null)
         {
             controllerLocal.Init();

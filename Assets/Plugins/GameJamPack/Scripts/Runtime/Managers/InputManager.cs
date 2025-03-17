@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-public class ControllerInput : GenericSingleton<ControllerInput>
+public class InputManager : GenericSingleton<InputManager>
 {
     [HideInInspector]
     public UnityEvent<float> Horizontal = new UnityEvent<float>();
