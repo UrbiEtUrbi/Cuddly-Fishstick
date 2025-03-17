@@ -1,11 +1,11 @@
-using System.Numerics;
 using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    public float attackRange = 1.5f;
-    public float attackCooldown = 0;
-
+    [BeginGroup("Attack Settings")]
+    [SerializeField] public float attackRange = 1.5f;
+    [SerializeField] public float attackCooldown = 0;
+    [EndGroup, SerializeField]
     private float lastAttackTime;
 
     /// <summary>

@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour, IDamageable
 {
-    public float maxHealth = 10.0f;
+    [BeginGroup("Health Settings")]
+    [SerializeField]public float maxHealth = 10.0f;   
+    [EndGroup, SerializeField]
     private float currentHealth;
+ 
 
     public event System.Action OnDeath; // Event for death
 
