@@ -2,12 +2,7 @@ using UnityEngine;
 
 public class EnemyAnimation : MonoBehaviour
 {
-    private SpriteRenderer sr;
-
-    private void Start()
-    {
-        sr = GetComponent<SpriteRenderer>();
-    }
+    [SerializeField] SpriteRenderer spriteRenderer;
 
     /// <summary>
     /// Flips sprite to face the player.
@@ -17,20 +12,20 @@ public class EnemyAnimation : MonoBehaviour
     {
         if (direction.x < 0)
         {
-            sr.flipX = true;
+            spriteRenderer.flipX = true;
         }
         else
         {
-            sr.flipX = false;
+            spriteRenderer.flipX = false;
         }
 
         if (direction.y > 0)
         {
-            sr.flipY = true;
+            spriteRenderer.flipY = true;
         }
         else
         {
-            sr.flipY = false;
+            spriteRenderer.flipY = false;
         }
     }
 }

@@ -53,7 +53,7 @@ public class Enemy : MonoBehaviour
 
             case EnemyState.Attacking:
                 attack.Attack();
-                if (!attack.CanAttack(distanceToPlayer))
+                if (attack.CanAttack(distanceToPlayer))
                 {
                     stateManager.SetState(EnemyState.Moving);
                 }
