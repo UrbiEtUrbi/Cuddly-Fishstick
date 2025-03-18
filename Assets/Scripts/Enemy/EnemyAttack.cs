@@ -23,7 +23,6 @@ public class EnemyAttack : MonoBehaviour
     /// </summary>
     public void Attack()
     {
-        Debug.Log("Enemy attacks!!!");
         lastAttackTime = Time.time;
     }
 }
