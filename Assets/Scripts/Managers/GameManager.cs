@@ -4,7 +4,11 @@ public class GameManager : LocalManager
 {
     public static GameManager Instance;
 
-  
+
+    private void Awake()
+    {
+        Instance = this;
+    }
     public override void Init()
     {
         // Sets Gamestate

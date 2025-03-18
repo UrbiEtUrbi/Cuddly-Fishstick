@@ -42,10 +42,10 @@ public class MainManager : GenericSingleton<MainManager>
         SceneManager.sceneLoaded -= OnAfterSceneLoaded;
         _currentScene = SceneManager.GetActiveScene().name;
         Debug.Log($"loaded scene {_currentScene}");
-        var controllerLocal = FindFirstObjectByType<LocalManager>();
-        if (controllerLocal != null)
+        var localManager = FindFirstObjectByType<LocalManager>();
+        if (localManager != null)
         {
-            controllerLocal.Init();
+            localManager.Init();
         }
 
         OnSceneLoaded?.Invoke();
