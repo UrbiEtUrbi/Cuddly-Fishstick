@@ -36,7 +36,7 @@ public class InputManager : GenericSingleton<InputManager>
 
     }
 
-    void OnAttack(InputValue inputValue)
+    void OnInteract(InputValue inputValue)
     {
 
         var isPressed = inputValue.Get<float>();

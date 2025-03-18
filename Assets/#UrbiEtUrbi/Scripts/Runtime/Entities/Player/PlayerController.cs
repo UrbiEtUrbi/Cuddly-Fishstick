@@ -50,19 +50,23 @@ public class PlayerController : MonoBehaviour
     public bool Slowing;
 
 
+    PlayerAttack m_PlayerAttack;
+
+
 
 
     void OnEnable()
     {
-     
+
+        m_PlayerAttack = GetComponent<PlayerAttack>();
         m_Rb = GetComponent<Rigidbody2D>();
 
         if (InputManager.Instance != null)
         {
             InputManager.Instance.Horizontal.AddListener(OnHorizontal);
             InputManager.Instance.Vertical.AddListener(OnVertical);
+            InputManager.Instance.Attack.AddListener(OnAttack);
         }
-        InputManager.Instance.Attack.AddListener(OnAttack);
     }
 
     void OnDisable()
@@ -72,8 +76,8 @@ public class PlayerController : MonoBehaviour
         {
             InputManager.Instance.Horizontal.RemoveListener(OnHorizontal);
             InputManager.Instance.Vertical.RemoveListener(OnVertical);
+            InputManager.Instance.Attack.RemoveListener(OnAttack);
         }
-        InputManager.Instance.Attack.RemoveListener(OnAttack);
 
     }
 
@@ -93,6 +97,7 @@ public class PlayerController : MonoBehaviour
             m_Velocity += m_Speed;
         }
 
+        m_PlayerAttack.AttackDirection = m_Speed.normalized;
         var maxSpeed = MaxSpeed;
         m_Velocity = m_Velocity.normalized * Mathf.Min((m_Velocity).magnitude, maxSpeed);
 
