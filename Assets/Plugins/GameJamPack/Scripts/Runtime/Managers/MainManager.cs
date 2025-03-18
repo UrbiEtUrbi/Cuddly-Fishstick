@@ -21,6 +21,7 @@ public class MainManager : GenericSingleton<MainManager>
 
     public void LoadNewScene(string sceneName)
     {
+      
         SceneManager.sceneLoaded += OnAfterSceneLoaded;
         SceneManager.LoadScene(sceneName);
     }
@@ -40,6 +41,7 @@ public class MainManager : GenericSingleton<MainManager>
     {
         SceneManager.sceneLoaded -= OnAfterSceneLoaded;
         _currentScene = SceneManager.GetActiveScene().name;
+        Debug.Log($"loaded scene {_currentScene}");
         var controllerLocal = FindFirstObjectByType<LocalManager>();
         if (controllerLocal != null)
         {

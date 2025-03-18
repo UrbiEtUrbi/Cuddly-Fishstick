@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class MainMenu : LocalManager
 {
-   public void PlayGame()
+    [SerializeField, SceneDetails]
+    SerializedScene scene;
+    public void PlayGame()
    {
-      LevelManager.Instance.LoadNextLevel();
+        MainManager.Instance.LoadNewScene(scene.BuildIndex);
    } 
 
    public void QuitGame()

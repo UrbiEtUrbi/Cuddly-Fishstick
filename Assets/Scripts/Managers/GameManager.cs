@@ -1,23 +1,11 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : LocalManager
 {
     public static GameManager Instance;
 
-    private void Awake()
-    {
-        if(Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    private void Start()
+  
+    public override void Init()
     {
         // Sets Gamestate
         GameStateManager.Instance.SetCurrentGameState(GameStates.Playing);

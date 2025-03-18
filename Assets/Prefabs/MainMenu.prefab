@@ -50,6 +50,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fea8f2ac41d144a73584f406fabb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scene:
+    sceneReference: {fileID: 102900000, guid: a36819f059d5dad4885b078c493a0f43, type: 3}
+    sceneName: Main
+    scenePath: Assets/Scenes/Main.unity
+    buildIndex: 2
 --- !u!1 &356682171300896112
 GameObject:
   m_ObjectHideFlags: 0
