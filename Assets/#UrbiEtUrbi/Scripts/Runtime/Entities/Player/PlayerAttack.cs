@@ -64,6 +64,7 @@ public class PlayerAttack : MonoBehaviour
         {
             return;
         }
+        AttackSound.Play();
         DealtDamage.Clear();
 
         m_IsAttacking = true;

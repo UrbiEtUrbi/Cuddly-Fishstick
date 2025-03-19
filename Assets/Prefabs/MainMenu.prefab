@@ -297,6 +297,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  ScribbleStart:
+    ID: 536870913
+    _sourceAsset: {fileID: 11400000, guid: 63bb3a10f2dc84624bd74d45bcfe679b, type: 2}
+    <DebugObject>k__BackingField: {fileID: 2058463725060325176}
 --- !u!1 &2447467304990449304
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,7 +450,6 @@ GameObject:
   - component: {fileID: 6268572033512835226}
   - component: {fileID: 5220984891127143424}
   - component: {fileID: 1190047333216026860}
-  - component: {fileID: 2353760034220664330}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -568,22 +571,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2353760034220664330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2684073836371798706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7fe121a78d0c4998acffabe9b8c4f8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sound:
-    ID: 0
-    _sourceAsset: {fileID: 0}
-    <DebugObject>k__BackingField: {fileID: 2684073836371798706}
 --- !u!1 &3079147599763582595
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,7 +583,6 @@ GameObject:
   - component: {fileID: 8547724992467416433}
   - component: {fileID: 9207079002254761736}
   - component: {fileID: 5673156961791060649}
-  - component: {fileID: 8270269097467978225}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -718,22 +704,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8270269097467978225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3079147599763582595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7fe121a78d0c4998acffabe9b8c4f8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sound:
-    ID: 0
-    _sourceAsset: {fileID: 0}
-    <DebugObject>k__BackingField: {fileID: 3079147599763582595}
 --- !u!1 &5088881390868421815
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,6 +811,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  ScribbleStart:
+    ID: 536870913
+    _sourceAsset: {fileID: 11400000, guid: 63bb3a10f2dc84624bd74d45bcfe679b, type: 2}
+    <DebugObject>k__BackingField: {fileID: 2058463725060325176}
 --- !u!1 &6926184967821895815
 GameObject:
   m_ObjectHideFlags: 0

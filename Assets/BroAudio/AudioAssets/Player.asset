@@ -15,14 +15,78 @@ MonoBehaviour:
   Entities:
   - <Name>k__BackingField: AttackBriefcase
     <ID>k__BackingField: 1073741824
-    MulticlipsPlayMode: 0
+    MulticlipsPlayMode: 2
     _group: {fileID: 0}
     Clips:
-    - AudioClip: {fileID: 8300000, guid: 6a1302eeeaf8744bdbf61f0198a53d59, type: 3}
+    - AudioClip: {fileID: 8300000, guid: 8c55fccbc934045cb9097a8206276621, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
-      EndPosition: 1.7
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    - AudioClip: {fileID: 8300000, guid: 5b46f2aa5348945348a457d1ca475be5, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    - AudioClip: {fileID: 8300000, guid: e5db58b8865fc4b799a7cb715991f7e7, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    - AudioClip: {fileID: 8300000, guid: 79cdd8fad42b74db1aff1383721d9b3a, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    - AudioClip: {fileID: 8300000, guid: 426cfeb4cfc0a4c30b0465ca9e75c974, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    - AudioClip: {fileID: 8300000, guid: 7368b6c80ba2f4f8094274a71ae7e408, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    - AudioClip: {fileID: 8300000, guid: 5e48d9a663508420bb99d66dfa6cf03f, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    - AudioClip: {fileID: 8300000, guid: 65e376fae527f4295b110de92b915e6d, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    - AudioClip: {fileID: 8300000, guid: 13e1a81133aa54a3bb71622d444fcd27, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
       FadeIn: 0
       FadeOut: 0
       Weight: 0
@@ -41,12 +105,12 @@ MonoBehaviour:
       BPM: 0
       Beats: 0
     SnapToFullVolume: 0
-  - <Name>k__BackingField: Briefcase_Hit_Flesh
+  - <Name>k__BackingField: Hit_Flesh
     <ID>k__BackingField: 1073741825
     MulticlipsPlayMode: 2
     _group: {fileID: 0}
     Clips:
-    - AudioClip: {fileID: 8300000, guid: fb41fdc0b03174bb0bae8add40e6778d, type: 3}
+    - AudioClip: {fileID: 8300000, guid: 3506002b665f04128bbb46952a51e930, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -54,7 +118,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: 309bf9db874434fc280cb7c7d9d11b52, type: 3}
+    - AudioClip: {fileID: 8300000, guid: 4a3c55844fd75453a85fcc5091d8665f, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -62,7 +126,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: 0d3c97c6a4824437b8e853d4cb34164c, type: 3}
+    - AudioClip: {fileID: 8300000, guid: 6a8006f9ae5ba4f1f918f89d17e9091f, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -70,7 +134,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: 579481e4c2ff44267a0cbba4dbe2d658, type: 3}
+    - AudioClip: {fileID: 8300000, guid: d36066ae0451f4ab6bb4b686bc3bba3e, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -78,7 +142,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: 1d518c2a9788b45558b798aad04233d0, type: 3}
+    - AudioClip: {fileID: 8300000, guid: f0d5046863fda45aabae4a5c36d23dd0, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -86,7 +150,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: 7b7e54c3c7e774f6abf34f764fc754ad, type: 3}
+    - AudioClip: {fileID: 8300000, guid: 604355f7f54474d5dbfa9570998c967b, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -94,7 +158,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: 3a8e8ab3b3c344e3b998b7c3506ed8f5, type: 3}
+    - AudioClip: {fileID: 8300000, guid: fd539ad50a25a4b449c832ebfbd62d31, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -102,7 +166,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: 3e9847d34b0f0444f94b82ad645ef041, type: 3}
+    - AudioClip: {fileID: 8300000, guid: 0b53af7f45f894b56be3033905b7666c, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -110,7 +174,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: 0fb7af4f36672465592bde25680e2aec, type: 3}
+    - AudioClip: {fileID: 8300000, guid: 1f81a87e73d2144fbae052e2aa495e30, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -133,12 +197,12 @@ MonoBehaviour:
       BPM: 0
       Beats: 0
     SnapToFullVolume: 0
-  - <Name>k__BackingField: Briefcase_Hit_Hard
+  - <Name>k__BackingField: Hit_Hard
     <ID>k__BackingField: 1073741826
     MulticlipsPlayMode: 2
     _group: {fileID: 0}
     Clips:
-    - AudioClip: {fileID: 8300000, guid: 4cb9c3905d76e400290f2954f851dfaa, type: 3}
+    - AudioClip: {fileID: 8300000, guid: da02fb4851efb4c25891de1f10da21cf, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -146,7 +210,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: f35140a7cfb3e4c8480218a8ac2fc60b, type: 3}
+    - AudioClip: {fileID: 8300000, guid: eac1d95f539734496983ed8319368551, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -154,7 +218,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: bb88c9f8aa19b483f8f642e927e198d7, type: 3}
+    - AudioClip: {fileID: 8300000, guid: 992006484e31045008c99143b67551ba, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -162,7 +226,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: 8685a7f47202d4717be949873588edb4, type: 3}
+    - AudioClip: {fileID: 8300000, guid: 16bf53b4a39ad4e9882b56a86405f266, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -170,7 +234,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: 6f8d5a023fcf84c2d9a79c66eafc26fb, type: 3}
+    - AudioClip: {fileID: 8300000, guid: ecd8ba0634bec4b38a0753d003134c2b, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -178,7 +242,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: be962425e900841428c396f89da1e87d, type: 3}
+    - AudioClip: {fileID: 8300000, guid: 2bdb0a5cad9cb4979b1c121c922baf12, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -186,7 +250,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: 8297871dea509457c81240383e3a57c6, type: 3}
+    - AudioClip: {fileID: 8300000, guid: c13b2e2262eb349ada0336986e1b0919, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -194,7 +258,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: 16f8f1d10cb564440b7b2cd6eae25d23, type: 3}
+    - AudioClip: {fileID: 8300000, guid: 091d4158399e9470aa7f4eeaef5e4632, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0
@@ -202,7 +266,7 @@ MonoBehaviour:
       FadeIn: 0
       FadeOut: 0
       Weight: 0
-    - AudioClip: {fileID: 8300000, guid: 5004d07b7dbb145628bd478f3e2a0bb9, type: 3}
+    - AudioClip: {fileID: 8300000, guid: 658f0b0ad5d714d2db7f28d9889ad4be, type: 3}
       Volume: 1
       Delay: 0
       StartPosition: 0

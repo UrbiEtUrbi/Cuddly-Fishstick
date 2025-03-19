@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using PrimeTween;
 using UnityEngine.Events;
+using Ami.BroAudio;
 
 public class ScribbleEffect : MonoBehaviour
 {
@@ -24,7 +25,8 @@ public class ScribbleEffect : MonoBehaviour
     [SerializeField]
     UnityEvent OnComplete;
 
-
+    [SerializeField]
+    SoundID ScribbleStart;
 
     private void Awake()
     {
@@ -34,6 +36,7 @@ public class ScribbleEffect : MonoBehaviour
     public void Play()
     {
         gameObject.SetActive(true);
+        ScribbleStart.Play();
         Tween.Custom(0, 0.999f, Duration, (x) =>
            {
                image.material.SetFloat("_Cutoff", x);
