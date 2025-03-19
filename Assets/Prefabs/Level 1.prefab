@@ -336,6 +336,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   currentHealth: 0
+  soundID:
+    ID: 1073741825
+    _sourceAsset: {fileID: 11400000, guid: 282c4d63e9b664d7dbd96099f8d6b4ec, type: 2}
+    <DebugObject>k__BackingField: {fileID: 3392676369643269377}
 --- !u!114 &6526444491612618299
 MonoBehaviour:
   m_ObjectHideFlags: 0

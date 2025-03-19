@@ -26,7 +26,6 @@ public class PlayerAttack : MonoBehaviour
     bool m_IsAttacking;
     bool m_CanAttack;
 
-
     HashSet<IDamageable> DealtDamage;
 
     private void Start()
@@ -66,7 +65,7 @@ public class PlayerAttack : MonoBehaviour
             return;
         }
         DealtDamage.Clear();
-        AttackSound.Play();
+
         m_IsAttacking = true;
         m_CanAttack = false;
 

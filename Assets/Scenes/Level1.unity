@@ -167,6 +167,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1288092040986370413, guid: e4980112f48313b438a2fb4700e53390, type: 3}
+      propertyPath: soundID.ID
+      value: 1073741825
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288092040986370413, guid: e4980112f48313b438a2fb4700e53390, type: 3}
+      propertyPath: soundID._sourceAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 282c4d63e9b664d7dbd96099f8d6b4ec, type: 2}
+    - target: {fileID: 1288092040986370413, guid: e4980112f48313b438a2fb4700e53390, type: 3}
+      propertyPath: soundID.<DebugObject>k__BackingField
+      value: 
+      objectReference: {fileID: 2338286332056891516}
     - target: {fileID: 4104106283789168623, guid: e4980112f48313b438a2fb4700e53390, type: 3}
       propertyPath: m_Creator
       value: 
@@ -183,6 +195,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8090006712070996269, guid: e4980112f48313b438a2fb4700e53390, type: 3}
+      propertyPath: AttackSound.ID
+      value: 1073741824
+      objectReference: {fileID: 0}
     - target: {fileID: 8700862319606178664, guid: e4980112f48313b438a2fb4700e53390, type: 3}
       propertyPath: m_Name
       value: Level 1
@@ -196,6 +212,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4980112f48313b438a2fb4700e53390, type: 3}
+--- !u!1 &2338286332056891516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3392676369643269377, guid: e4980112f48313b438a2fb4700e53390, type: 3}
+  m_PrefabInstance: {fileID: 2338286332056891515}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

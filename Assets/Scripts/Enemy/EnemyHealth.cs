@@ -1,11 +1,14 @@
 using UnityEngine;
-
+using Ami.BroAudio;
 public class EnemyHealth : MonoBehaviour, IDamageable
 {
     [BeginGroup("Health Settings")]
     [SerializeField]public float maxHealth = 10.0f;   
     [EndGroup, SerializeField]
     private float currentHealth;
+
+    [SerializeField]
+    SoundID soundID;
  
 
     public event System.Action OnDeath; // Event for death
@@ -21,6 +24,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     /// <param name="amount">Float amount of damage</param>
     public void TakeDamage(float amount)
     {
+        soundID.Play();
         currentHealth -= amount;
         if (currentHealth <= 0)
         {

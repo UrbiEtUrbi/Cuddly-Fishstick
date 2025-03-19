@@ -9,7 +9,14 @@ public class ButtonSound : MonoBehaviour
     [SerializeField]
     SoundID sound;
 
+    public bool IsSet => sound.IsValid();
 
+
+
+    public void SetSound(SoundID sound)
+    {
+        this.sound = sound;
+    }
     private void Start()
     {
 
