@@ -154,11 +154,11 @@ MonoBehaviour:
     scenePath: Assets/Scenes/MainMenu.unity
     buildIndex: 1
   SaveData:
-    MaxHp: 0
-    CurrentHP: 0
+    MaxHp: 3
+    CurrentHP: 3
     resourceSaves: []
     techSaves: []
-    CurrentRound: 0
+    CurrentLevel: 0
     gameStateType: 0
 --- !u!4 &790489786
 Transform:

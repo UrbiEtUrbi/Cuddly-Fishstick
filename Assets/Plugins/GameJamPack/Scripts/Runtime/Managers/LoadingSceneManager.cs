@@ -76,7 +76,7 @@ public class SaveData
     public List<ResourceAmount> resourceSaves = new();
     public List<TechSave> techSaves = new();
 
-    public int CurrentRound;
+    public int CurrentLevel;
     public GameStateType gameStateType;
 
 

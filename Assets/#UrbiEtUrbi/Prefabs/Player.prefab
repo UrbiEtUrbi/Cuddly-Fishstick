@@ -5105,13 +5105,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4085938418918171952}
+  - component: {fileID: 2805402647143455451}
   - component: {fileID: 5766531830505408222}
   - component: {fileID: 7008108207205475686}
   - component: {fileID: 2789158107010904518}
   - component: {fileID: 2925213044726556415}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5133,6 +5134,23 @@ Transform:
   - {fileID: 1137166235897431806}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2805402647143455451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7739226758064582938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47063184ccb95fa49b38632916141158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  hitSound:
+    ID: 0
+    _sourceAsset: {fileID: 0}
+    <DebugObject>k__BackingField: {fileID: 7739226758064582938}
 --- !u!114 &5766531830505408222
 MonoBehaviour:
   m_ObjectHideFlags: 0

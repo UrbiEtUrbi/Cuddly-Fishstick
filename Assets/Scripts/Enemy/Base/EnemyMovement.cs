@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [BeginGroup("Movement Settings")]
-    public float moveSpeed = 2.0f;
-    public float stoppingDistance = 1.0f;
-    [EndGroup, SerializeField]
+    private float moveSpeed = 2.0f;
+    private float stoppingDistance = 1.0f;
     private Rigidbody2D rb;
 
-    private void Start()
+    public void Init(float moveSpeed, float stoppingDistance)
     {
         rb = GetComponent<Rigidbody2D>();
+        this.moveSpeed = moveSpeed;
+        this.stoppingDistance = stoppingDistance;
     }
 
     public void MoveTowardsPlayer(Vector2 direction)

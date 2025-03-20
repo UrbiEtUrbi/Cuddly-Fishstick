@@ -2,7 +2,7 @@ using UnityEngine;
 
 public enum EnemyState { Idleing, Attacking, Moving, Dying }
 
-public class EnemyStateManager : MonoBehaviour
+public class EnemyStateManager 
 {
     public EnemyState CurrentState { get; private set; }
 

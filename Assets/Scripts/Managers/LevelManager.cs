@@ -29,11 +29,11 @@ public class LevelManager : MonoBehaviour
             }
 
             currentLevelInstance = Instantiate(levelPrefabs[levelNumber]);
-            Debug.Log("Loading Level " + levelNumber);
+            Debug.Log("Loading Level " + (levelNumber+1));
         }
         else
         {
-            Debug.LogError("Invalid level number: " + levelNumber);
+            Debug.LogError("Invalid level number: " + (levelNumber + 1));
         }
     }
 
@@ -53,5 +53,10 @@ public class LevelManager : MonoBehaviour
         {
             totalLevels = levelPrefabs.Length-1;
         }
+    }
+
+    public int GetCurrentLevel()
+    {
+        return currentLevel;
     }
 }
