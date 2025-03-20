@@ -28,6 +28,9 @@ public class PlayerAttack : MonoBehaviour
 
     HashSet<IDamageable> DealtDamage;
 
+    [SerializeField]
+    LayerMask TargetLayer;
+
     private void Start()
     {
 
@@ -81,7 +84,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (m_IsAttacking)
         {
-            var colliders = Physics2D.OverlapBoxAll(transform.position + (Vector3)AttackDirection *0.5f, m_Size,0);
+            var colliders = Physics2D.OverlapBoxAll(transform.position + (Vector3)AttackDirection *0.5f, m_Size,0, TargetLayer);
             foreach (var collider in colliders)
             {
                 if (collider != null)

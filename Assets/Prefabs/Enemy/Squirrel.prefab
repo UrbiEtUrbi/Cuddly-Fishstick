@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8509548877446063277}
   - component: {fileID: 8646455165454947671}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 2038210072133422751}
   - component: {fileID: 6688516633395627153}
   - component: {fileID: 3421850571836425409}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Squirrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,11 +213,15 @@ MonoBehaviour:
   attackCooldown: 2
   maxHealth: 10
   soundID:
-    ID: 0
-    _sourceAsset: {fileID: 0}
+    ID: 1073741825
+    _sourceAsset: {fileID: 11400000, guid: 282c4d63e9b664d7dbd96099f8d6b4ec, type: 2}
     <DebugObject>k__BackingField: {fileID: 8364272980243089468}
   moveSpeed: 2
-  stoppingDistance: 1
+  stoppingDistance: 3
+  runAwayDistance: 2
+  DetectionDistance: 8
+  LoseInterestTime: 2
+  moveAway: 1
   acornPrefab: {fileID: 6438781529305395622, guid: f74098be8288f3d42a4049fe2fbf1ec6, type: 3}
   projectileSpeed: 4
   projectileLifeTime: 2

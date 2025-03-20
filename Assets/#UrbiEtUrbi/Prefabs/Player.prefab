@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7305342259917859929}
   - component: {fileID: 1360960020115089775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 1137166235897431806}
   - component: {fileID: 5180344915269807724}
   - component: {fileID: 3970726290311623022}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4932,7 +4932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 807476343894435962}
   - component: {fileID: 7013502608492991332}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5019,7 +5019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4747678802526339209}
   - component: {fileID: 2101991329709282864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Briefcase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5110,7 +5110,7 @@ GameObject:
   - component: {fileID: 7008108207205475686}
   - component: {fileID: 2789158107010904518}
   - component: {fileID: 2925213044726556415}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5190,6 +5190,9 @@ MonoBehaviour:
     _sourceAsset: {fileID: 11400000, guid: 282c4d63e9b664d7dbd96099f8d6b4ec, type: 2}
     <DebugObject>k__BackingField: {fileID: 7739226758064582938}
   AttackDirection: {x: 0, y: 0}
+  TargetLayer:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!50 &2789158107010904518
 Rigidbody2D:
   serializedVersion: 5

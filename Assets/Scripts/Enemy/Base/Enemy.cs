@@ -30,6 +30,24 @@ public class Enemy : MonoBehaviour
     [Tooltip("Distance at which the enemy stops following the player")]
     public float stoppingDistance = 1.0f;
 
+    [Range(0.1f, 5.0f)]
+    [Tooltip("Distance at which the enemy stops following the player")]
+    public float runAwayDistance = 1.0f;
+
+    [SerializeField]
+    float DetectionDistance;
+
+    [SerializeField]
+    float LoseInterestTime;
+
+
+    [SerializeField]
+    bool moveAway;
+
+
+    float loseInterestTimer;
+
+    float idleTimer;
 
     protected GameObject player;
     protected EnemyHealth health;
@@ -55,7 +73,7 @@ public class Enemy : MonoBehaviour
         enemyAnimation?.Init(spriteRenderer);
         
         health.OnDeath += HandleDeath;
-        stateManager.SetState(EnemyState.Moving);
+        stateManager.SetState(EnemyState.Idleing);
     }
 
     private void Update()
@@ -64,6 +82,11 @@ public class Enemy : MonoBehaviour
         {
             HandleState();
         }
+        loseInterestTimer -= Time.deltaTime;
+        idleTimer -= Time.deltaTime;
+
+
+
     }
 
     /// <summary>
@@ -75,11 +98,20 @@ public class Enemy : MonoBehaviour
         Vector2 direction = vectorToPlayer.normalized;
         float distanceToPlayer = vectorToPlayer.magnitude;
 
-        enemyAnimation.FlipSprite(direction);
+        
+
         switch (stateManager.CurrentState)
         {
             case EnemyState.Moving:
-                movement.MoveTowardsPlayer(direction);
+                enemyAnimation.FlipSprite(direction);
+                if (distanceToPlayer < runAwayDistance && moveAway)
+                {
+                    movement.MoveTowardsPlayer(-direction);
+                }
+                else
+                {
+                    movement.MoveTowardsPlayer(direction);
+                }
 
                 if(attack.CanAttack() && attack.NeedsMoving(distanceToPlayer))
                 {
@@ -89,6 +121,7 @@ public class Enemy : MonoBehaviour
                 break;
 
             case EnemyState.Attacking:
+                enemyAnimation.FlipSprite(direction);
                 if (attack.CanAttack())
                 {
                     attack.Attack();
@@ -102,7 +135,40 @@ public class Enemy : MonoBehaviour
             case EnemyState.Dying:
                 Destroy(gameObject);
                 break;
+
+            case EnemyState.Searching:
+                if (loseInterestTimer <= 0)
+                {
+
+                    stateManager.SetState(EnemyState.Idleing);
+                }
+                if (distanceToPlayer < DetectionDistance)
+                {
+                    stateManager.SetState(EnemyState.Moving);
+                }
+                break;
+
+            case EnemyState.Idleing:
+                if (idleTimer < -1)
+                {
+                    idleTimer = 2;
+                }
+                if (distanceToPlayer < DetectionDistance)
+                {
+                    stateManager.SetState(EnemyState.Moving);
+                }
+                break;
+
+                
         }
+
+        if (distanceToPlayer > DetectionDistance && stateManager.CurrentState != EnemyState.Idleing)
+        {
+            loseInterestTimer = LoseInterestTime;
+            stateManager.SetState(EnemyState.Searching);
+        }
+
+        
     }
 
     /// <summary>
@@ -121,5 +187,10 @@ public class Enemy : MonoBehaviour
     public Vector2 GetVectorToPlayer()
     {
         return player.transform.position - transform.position;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position, DetectionDistance);
     }
 }

@@ -26,11 +26,11 @@ public class EnemyAnimation : MonoBehaviour
 
         if (direction.y > 0)
         {
-            spriteRenderer.flipY = true;
+         //   spriteRenderer.flipY = true;
         }
         else
         {
-            spriteRenderer.flipY = false;
+       //     spriteRenderer.flipY = false;
         }
     }
 }
