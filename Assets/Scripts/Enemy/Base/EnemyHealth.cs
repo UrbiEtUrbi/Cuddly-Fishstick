@@ -2,19 +2,19 @@ using UnityEngine;
 using Ami.BroAudio;
 public class EnemyHealth : MonoBehaviour, IDamageable
 {
-    [BeginGroup("Health Settings")]
-    [SerializeField]public float maxHealth = 10.0f;   
-    [EndGroup, SerializeField]
+
+    private float maxHealth;   
     private float currentHealth;
 
-    [SerializeField]
-    SoundID soundID;
+    private SoundID soundID;
  
 
     public event System.Action OnDeath; // Event for death
 
-    private void Start()
+    public void Init(float maxHealth, SoundID soundID)
     {
+        this.maxHealth = maxHealth;
+        this.soundID = soundID;
         currentHealth = maxHealth;
     }
 

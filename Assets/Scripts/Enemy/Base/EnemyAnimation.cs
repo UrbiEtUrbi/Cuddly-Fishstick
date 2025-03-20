@@ -2,7 +2,12 @@ using UnityEngine;
 
 public class EnemyAnimation : MonoBehaviour
 {
-    [SerializeField] SpriteRenderer spriteRenderer;
+    private SpriteRenderer spriteRenderer;
+
+    public void Init(SpriteRenderer spriteRender)
+    {
+        spriteRenderer = spriteRender;
+    }
 
     /// <summary>
     /// Flips sprite to face the player.
