@@ -137,6 +137,7 @@ public class Enemy : MonoBehaviour
                 break;
 
             case EnemyState.Searching:
+                enemyAnimation.FlipSprite(direction);
                 if (loseInterestTimer <= 0)
                 {
 

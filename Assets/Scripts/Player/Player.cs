@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public float maxHealth = 3.0f;
     public SoundID hitSound;
     private PlayerHealth health;
+
     private void Start()
     {
         health = gameObject.AddComponent<PlayerHealth>();
