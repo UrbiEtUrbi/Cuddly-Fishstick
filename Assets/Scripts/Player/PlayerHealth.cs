@@ -35,8 +35,6 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     private void Die()
     {
-        Debug.Log(gameObject.name + " died!");
         OnDeath?.Invoke(); // Trigger death event
-        Destroy(gameObject);
     }
 }
