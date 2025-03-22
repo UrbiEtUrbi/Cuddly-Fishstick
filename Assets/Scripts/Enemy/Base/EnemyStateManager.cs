@@ -1,11 +1,6 @@
 using UnityEngine;
 
-public enum EnemyState {
-    Idleing,
-    Searching,
-    Attacking,
-    Moving,
-    Dying }
+public enum EnemyState { Idleing, Attacking, Moving, Dying }
 
 public class EnemyStateManager 
 {

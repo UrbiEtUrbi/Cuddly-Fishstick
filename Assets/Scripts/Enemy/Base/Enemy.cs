@@ -1,5 +1,4 @@
 using Ami.BroAudio;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -92,7 +91,7 @@ public class Enemy : MonoBehaviour
     /// <summary>
     /// Decides what the enemy should be doing based off the state and distance to player
     /// </summary>
-    private void HandleState()
+    protected virtual void HandleState()
     {
         Vector2 vectorToPlayer = GetVectorToPlayer();
         Vector2 direction = vectorToPlayer.normalized;
