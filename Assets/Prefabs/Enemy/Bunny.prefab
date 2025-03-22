@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8023672036802456773
+--- !u!1 &4499479208083514209
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8509548877446063277}
-  - component: {fileID: 8646455165454947671}
+  - component: {fileID: 8035761723452989441}
+  - component: {fileID: 7402056996323036611}
   m_Layer: 11
   m_Name: Art
   m_TagString: Untagged
@@ -17,28 +17,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8509548877446063277
+--- !u!4 &8035761723452989441
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8023672036802456773}
+  m_GameObject: {fileID: 4499479208083514209}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 474207182231939609}
+  m_Father: {fileID: 8376134641465099706}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8646455165454947671
+--- !u!212 &7402056996323036611
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8023672036802456773}
+  m_GameObject: {fileID: 4499479208083514209}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,18 +76,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7579966246130621718, guid: 0beaa798f25aef04ea2be301d9e57f54, type: 3}
-  m_Color: {r: 0.5849056, g: 0.39269194, b: 0.23451404, a: 1}
+  m_Sprite: {fileID: 1185625210376227553, guid: c4fbd05185d8d5c428f5787a3a628460, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.78, y: 2.52}
+  m_Size: {x: 2.18, y: 2.26}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &8364272980243089468
+--- !u!1 &8707117638656385959
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,41 +95,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 474207182231939609}
-  - component: {fileID: 2038210072133422751}
-  - component: {fileID: 6688516633395627153}
-  - component: {fileID: 3421850571836425409}
+  - component: {fileID: 8376134641465099706}
+  - component: {fileID: 3492509660267054458}
+  - component: {fileID: -7960554032639831231}
+  - component: {fileID: 5661037459971307821}
   m_Layer: 11
-  m_Name: Squirrel
+  m_Name: Bunny
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &474207182231939609
+--- !u!4 &8376134641465099706
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8364272980243089468}
+  m_GameObject: {fileID: 8707117638656385959}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.516, z: 1}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 604.5066, y: 94.30635, z: -1.4207475}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8509548877446063277}
+  - {fileID: 8035761723452989441}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &2038210072133422751
+--- !u!50 &3492509660267054458
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8364272980243089468}
+  m_GameObject: {fileID: 8707117638656385959}
   m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -149,13 +149,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &6688516633395627153
+--- !u!61 &-7960554032639831231
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8364272980243089468}
+  m_GameObject: {fileID: 8707117638656385959}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -183,7 +183,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.038936734, y: 0.02396059}
+  m_Offset: {x: 0.10788244, y: -0.051127017}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -193,38 +193,37 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.6592824, y: 2.509529}
+  m_Size: {x: 1.8410238, y: 2.1133676}
   m_EdgeRadius: 0
---- !u!114 &3421850571836425409
+--- !u!114 &5661037459971307821
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8364272980243089468}
+  m_GameObject: {fileID: 8707117638656385959}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59338d50ed710774d92aeebfedbd41f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 946554fa0606212489b05216cdf8dac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 8646455165454947671}
-  attackRange: 3
+  spriteRenderer: {fileID: 7402056996323036611}
+  attackRange: 1.5
   attackDamage: 1
-  attackCooldown: 2
+  attackCooldown: 0.5
   maxHealth: 4
   soundID:
     ID: 1073741825
     _sourceAsset: {fileID: 11400000, guid: 282c4d63e9b664d7dbd96099f8d6b4ec, type: 2}
-    <DebugObject>k__BackingField: {fileID: 8364272980243089468}
+    <DebugObject>k__BackingField: {fileID: 8707117638656385959}
   moveSpeed: 2
-  stoppingDistance: 3
-  runAwayDistance: 2
-  DetectionDistance: 8
+  stoppingDistance: 1
+  runAwayDistance: 1
+  DetectionDistance: 10
   LoseInterestTime: 2
-  moveAway: 1
+  moveAway: 0
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
-  acornPrefab: {fileID: 6438781529305395622, guid: f74098be8288f3d42a4049fe2fbf1ec6, type: 3}
-  projectileSpeed: 4
-  projectileLifeTime: 2
+  chargeSpeed: 0
+  chargeUpTime: 0

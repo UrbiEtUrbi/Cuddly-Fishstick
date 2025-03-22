@@ -1,5 +1,6 @@
 using Ami.BroAudio;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
@@ -54,6 +55,7 @@ public class Enemy : MonoBehaviour
     protected EnemyAttack attack;
     protected EnemyAnimation enemyAnimation;
     protected EnemyStateManager stateManager = new EnemyStateManager();
+    public UnityEvent OnDeath;
 
     public virtual void Start()
     {
@@ -73,6 +75,7 @@ public class Enemy : MonoBehaviour
         
         health.OnDeath += HandleDeath;
         stateManager.SetState(EnemyState.Idleing);
+        EnemyManager.Instance.RegisterEnemy(gameObject);
     }
 
     private void Update()
@@ -133,6 +136,8 @@ public class Enemy : MonoBehaviour
 
             case EnemyState.Dying:
                 Destroy(gameObject);
+                OnDeath.Invoke();
+                EnemyManager.Instance.UnregisterEnemy(gameObject);
                 break;
 
             case EnemyState.Searching:
@@ -176,7 +181,6 @@ public class Enemy : MonoBehaviour
     /// </summary>
     private void HandleDeath()
     {
-        Debug.Log("Enemy died!");
         stateManager.SetState(EnemyState.Dying);
     }
 
