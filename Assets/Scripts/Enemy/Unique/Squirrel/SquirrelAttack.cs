@@ -25,11 +25,11 @@ public class SquirrelAttack : EnemyAttack
 
      private void SpawnAcorn()
      {
+        animator.SetBool("IsThrowing", false);
         GameObject acorn = Instantiate(acornPrefab, transform.position, Quaternion.identity);
         Vector2 direction = GetComponent<SquirrelEnemy>().GetVectorToPlayer().normalized;
         acorn.AddComponent<Acorn>().SetDamage(attackDamage);
         acorn.GetComponent<Rigidbody2D>().linearVelocity = direction * projectileSpeed;
         Destroy(acorn, projectileLifeTime);
-        animator.SetBool("IsThrowing", false);
      }
 }

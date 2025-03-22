@@ -248,5 +248,5 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls: []
-  chargeSpeed: 0
-  chargeUpTime: 0
+  chargeSpeed: 10
+  chargeUpTime: 1
