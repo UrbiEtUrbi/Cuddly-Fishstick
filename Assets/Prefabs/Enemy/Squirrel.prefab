@@ -251,3 +251,4 @@ MonoBehaviour:
   acornPrefab: {fileID: 6438781529305395622, guid: f74098be8288f3d42a4049fe2fbf1ec6, type: 3}
   projectileSpeed: 4
   projectileLifeTime: 2
+  attackAnimator: {fileID: 1525863116378875410}
