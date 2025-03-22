@@ -104,6 +104,18 @@ public class PlayerController : MonoBehaviour
      
 
         m_Rb.linearVelocity = m_Velocity;
+
+
+        _Animator.speed = Mathf.Clamp01(m_Rb.linearVelocity.magnitude);
+        if (Mathf.Abs(m_Rb.linearVelocity.x) >= Mathf.Abs(m_Rb.linearVelocity.y))
+        {
+
+            _Animator.SetFloat("xy", m_Rb.linearVelocity.x <= 0 ? 0 : 0.5f);
+        }
+        else
+        {
+            _Animator.SetFloat("xy", m_Rb.linearVelocity.y <= 0 ? 0.8f : 1);
+        }
     }
 
   
