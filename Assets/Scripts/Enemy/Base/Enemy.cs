@@ -100,12 +100,12 @@ public class Enemy : MonoBehaviour
         Vector2 direction = vectorToPlayer.normalized;
         float distanceToPlayer = vectorToPlayer.magnitude;
 
-        
+        enemyAnimation.FlipSprite(direction);
 
         switch (stateManager.CurrentState)
         {
             case EnemyState.Moving:
-                enemyAnimation.FlipSprite(direction);
+                //enemyAnimation.FlipSprite(direction);
                 if (distanceToPlayer < runAwayDistance && moveAway)
                 {
                     movement.MoveTowardsPlayer(-direction);
@@ -123,7 +123,7 @@ public class Enemy : MonoBehaviour
                 break;
 
             case EnemyState.Attacking:
-                enemyAnimation.FlipSprite(direction);
+                //enemyAnimation.FlipSprite(direction);
                 if (attack.CanAttack())
                 {
                     attack.Attack();
@@ -141,7 +141,7 @@ public class Enemy : MonoBehaviour
                 break;
 
             case EnemyState.Searching:
-                enemyAnimation.FlipSprite(direction);
+                
                 if (loseInterestTimer <= 0)
                 {
 

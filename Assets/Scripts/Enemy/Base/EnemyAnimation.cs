@@ -13,24 +13,21 @@ public class EnemyAnimation : MonoBehaviour
     /// Flips sprite to face the player.
     /// </summary>
     /// <param name="direction"></param>
+    /// 
     public void FlipSprite(Vector2 direction)
     {
-        if (direction.x < 0)
-        {
-            animator.SetInteger("DirectionX", -1);
-        }
-        else
-        {
-            animator.SetInteger("DirectionX", 1);
-        }
 
-        if (direction.y > 0)
+
+        if (Mathf.Abs(direction.x) >= Mathf.Abs(direction.y))
         {
-         //   spriteRenderer.flipY = true;
+
+            animator.SetFloat("xy", 0);
+            animator.transform.localScale = new Vector3(-Mathf.Sign(direction.x), 1, 1);
         }
         else
         {
-       //     spriteRenderer.flipY = false;
+            animator.SetFloat("xy", direction.y <= 0 ? 0.5f : 1);
         }
+      
     }
 }

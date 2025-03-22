@@ -242,7 +242,7 @@ MonoBehaviour:
   moveSpeed: 2
   stoppingDistance: 3
   runAwayDistance: 2
-  DetectionDistance: 8
+  DetectionDistance: 5
   LoseInterestTime: 2
   moveAway: 1
   OnDeath:

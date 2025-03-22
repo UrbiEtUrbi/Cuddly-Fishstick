@@ -28,16 +28,24 @@ public class ScribbleEffect : MonoBehaviour
     [SerializeField]
     SoundID ScribbleStart;
 
+    Tween t;
+
     private void Awake()
     {
         image.material = new Material(ScribbleMaterial);
     }
 
+    
+
     public void Play()
     {
+        if (t.isAlive)
+        {
+            return;
+        }
         gameObject.SetActive(true);
         ScribbleStart.Play();
-        Tween.Custom(0, 0.999f, Duration, (x) =>
+       t = Tween.Custom(0, 0.999f, Duration, (x) =>
            {
                image.material.SetFloat("_Cutoff", x);
 
