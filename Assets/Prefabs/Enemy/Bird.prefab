@@ -56,6 +56,9 @@ MonoBehaviour:
     ID: 1073741825
     _sourceAsset: {fileID: 11400000, guid: 282c4d63e9b664d7dbd96099f8d6b4ec, type: 2}
     <DebugObject>k__BackingField: {fileID: 5797208592293394158}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!50 &4303940503305573649
 Rigidbody2D:
   serializedVersion: 5
@@ -205,7 +208,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 244238746, guid: ab416e745246946fcbc5664b81dc096b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

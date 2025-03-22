@@ -43,6 +43,7 @@ public class BirdEnemy : MonoBehaviour
 
     private void Start()
     {
+        EnemyManager.Instance.RegisterEnemy(gameObject);
         Reset();
     }
     public void Reset()
