@@ -1,4 +1,5 @@
 using UnityEngine;
+using Unity.Cinemachine;
 
 public enum PlayerState {Alive, Dead, Damaged}
 
@@ -12,6 +13,8 @@ public class PlayerManager : MonoBehaviour
     public void Awake()
     {
         Instance = this;
+       
+      
     }
 
     public void SpawnPlayer(int level)
@@ -19,6 +22,8 @@ public class PlayerManager : MonoBehaviour
         player = Instantiate(playerPrefab);
         player.transform.position = GameObject.FindWithTag("PlayerSpawn").transform.position;
         SetPlayerState(PlayerState.Alive);
+        var cm = FindFirstObjectByType<CinemachineCamera>();
+        cm.Target.TrackingTarget = player.transform;
         Debug.Log("Player Spawned on Level " + (level +1).ToString());
     }
 
