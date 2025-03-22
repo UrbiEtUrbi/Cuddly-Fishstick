@@ -5,7 +5,7 @@ using UnityEngine.Events;
 public class Enemy : MonoBehaviour
 {
     [Header("Animation Settings")]
-    public SpriteRenderer spriteRenderer;
+    public Animator animator;
 
     [Header("Attack Settings")]
     [Tooltip("How close the enemy needs to be to attack")]
@@ -71,7 +71,7 @@ public class Enemy : MonoBehaviour
         attack?.Init(attackRange, attackCooldown);
 
         enemyAnimation ??= gameObject.AddComponent<EnemyAnimation>();
-        enemyAnimation?.Init(spriteRenderer);
+        enemyAnimation?.Init(animator);
         
         health.OnDeath += HandleDeath;
         stateManager.SetState(EnemyState.Idleing);

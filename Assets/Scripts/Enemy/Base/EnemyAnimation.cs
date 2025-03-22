@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class EnemyAnimation : MonoBehaviour
 {
-    private SpriteRenderer spriteRenderer;
+    private Animator animator;
 
-    public void Init(SpriteRenderer spriteRender)
+    public void Init(Animator animator)
     {
-        spriteRenderer = spriteRender;
+        this.animator = animator;
     }
 
     /// <summary>
@@ -17,11 +17,11 @@ public class EnemyAnimation : MonoBehaviour
     {
         if (direction.x < 0)
         {
-            spriteRenderer.flipX = true;
+            animator.SetInteger("DirectionX", -1);
         }
         else
         {
-            spriteRenderer.flipX = false;
+            animator.SetInteger("DirectionX", 1);
         }
 
         if (direction.y > 0)
