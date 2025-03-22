@@ -50,7 +50,7 @@ MonoBehaviour:
     ID: 1073741825
     _sourceAsset: {fileID: 11400000, guid: 282c4d63e9b664d7dbd96099f8d6b4ec, type: 2}
     <DebugObject>k__BackingField: {fileID: 8127145532715956007}
-  health: 10
+  health: 1
 --- !u!212 &360758894051658758
 SpriteRenderer:
   m_ObjectHideFlags: 0
