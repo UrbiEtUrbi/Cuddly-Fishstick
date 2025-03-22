@@ -14,10 +14,19 @@ public class BunnyAttack : EnemyAttack
         this.animator = animator;
     }
 
+
+    public override bool CanAttack()
+    {
+        return base.CanAttack();
+    }
+
     public override void Attack()
     {
         base.Attack();
-        animator.SetBool("Charging", true);
+
+
+        animator.SetBool("IsStanding", true);
+        
         Invoke(nameof(Charge), chargeUpTime);
     }
 
@@ -27,7 +36,8 @@ public class BunnyAttack : EnemyAttack
     /// <returns>True if the enemy can attack False if the enemy is still charging</returns>
     public void Charge()
     {
-        animator.SetBool("Charging", false);
+        animator.SetBool("IsStanding", false);
+        animator.SetBool("IsCharging", true);
         gameObject.GetComponent<Rigidbody2D>().linearVelocity = bunnyEnemy.GetVectorToPlayer().normalized * chargeSpeed;
     }
 }

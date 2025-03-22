@@ -78,7 +78,7 @@ public class Enemy : MonoBehaviour
         EnemyManager.Instance.RegisterEnemy(gameObject);
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if (player != null)
         {

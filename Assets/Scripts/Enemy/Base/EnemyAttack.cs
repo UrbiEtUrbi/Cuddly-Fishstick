@@ -16,7 +16,7 @@ public class EnemyAttack : MonoBehaviour
     /// Checks whether you can atack player based off last attack time
     /// </summary>
     /// <returns>True if enemy can attack False if Enemy can't attack</returns>
-    public bool CanAttack()
+    public virtual bool CanAttack()
     {
         return  Time.time > lastAttackTime + attackCooldown;
     }

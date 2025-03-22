@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 4499479208083514209}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 151aa51d4d9c87f47a70b3e39923de97, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9d7f4c4f602c646a98a3ea872985afaf, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
   animator: {fileID: 2018959198714394756}
   attackRange: 1.5
   attackDamage: 1
-  attackCooldown: 0.5
+  attackCooldown: 1.5
   maxHealth: 4
   soundID:
     ID: 1073741825

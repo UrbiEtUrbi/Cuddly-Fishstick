@@ -178,7 +178,7 @@ PrefabInstance:
     - target: {fileID: 1288092040986370413, guid: e4980112f48313b438a2fb4700e53390, type: 3}
       propertyPath: soundID.<DebugObject>k__BackingField
       value: 
-      objectReference: {fileID: 2338286332056891516}
+      objectReference: {fileID: 0}
     - target: {fileID: 4104106283789168623, guid: e4980112f48313b438a2fb4700e53390, type: 3}
       propertyPath: m_Creator
       value: 
@@ -212,11 +212,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4980112f48313b438a2fb4700e53390, type: 3}
---- !u!1 &2338286332056891516 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3392676369643269377, guid: e4980112f48313b438a2fb4700e53390, type: 3}
-  m_PrefabInstance: {fileID: 2338286332056891515}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -26,4 +26,35 @@ public class BunnyEnemy : Enemy
             }
         }
     }
+
+    
+
+    protected override void Update()
+    {
+        base.Update();
+
+
+
+        if (stateManager.CurrentState != EnemyState.Attacking)
+        {
+            animator.SetBool("IsCharging", false);
+        }
+
+        if (stateManager.CurrentState == EnemyState.Attacking)
+        {
+            animator.SetBool("IsWalking", false);
+        }
+        if (stateManager.CurrentState == EnemyState.Moving)
+        {
+            animator.SetBool("IsCharging", false);
+            animator.SetBool("IsWalking", true);
+            animator.SetBool("IsStanding", false);
+        }
+        if (stateManager.CurrentState == EnemyState.Idleing)
+        {
+            animator.SetBool("IsCharging", false);
+            animator.SetBool("IsStanding", true);
+            animator.SetBool("IsWalking", false);
+        }
+    }
 }
