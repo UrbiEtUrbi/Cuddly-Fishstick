@@ -10,7 +10,7 @@ public class BunnyEnemy : Enemy
     public override void Start()
     {
         bunnyAttack = gameObject.AddComponent<BunnyAttack>();
-        bunnyAttack.Init(chargeSpeed, chargeUpTime, this, animator);
+        bunnyAttack.Init(chargeSpeed, chargeUpTime, this, animator,attackSound);
         attack = bunnyAttack;
         base.Start();
     }

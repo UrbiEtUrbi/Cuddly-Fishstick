@@ -239,6 +239,14 @@ MonoBehaviour:
     ID: 1073741825
     _sourceAsset: {fileID: 11400000, guid: 282c4d63e9b664d7dbd96099f8d6b4ec, type: 2}
     <DebugObject>k__BackingField: {fileID: 8707117638656385959}
+  deathSound:
+    ID: 1073741828
+    _sourceAsset: {fileID: 11400000, guid: 707bedd046cca47c5939214f72047504, type: 2}
+    <DebugObject>k__BackingField: {fileID: 8707117638656385959}
+  attackSound:
+    ID: 1073741827
+    _sourceAsset: {fileID: 11400000, guid: 707bedd046cca47c5939214f72047504, type: 2}
+    <DebugObject>k__BackingField: {fileID: 8707117638656385959}
   moveSpeed: 2
   stoppingDistance: 1
   runAwayDistance: 1

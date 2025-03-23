@@ -6,7 +6,7 @@ public class Plant : MonoBehaviour
 {
 
     [SerializeField]
-    SoundID HitSound;
+    SoundID HitSound, DeathSound;
 
     [SerializeField]
     float health;
@@ -18,7 +18,7 @@ public class Plant : MonoBehaviour
     {
         EnemyManager.Instance.RegisterEnemy(gameObject);
         var eh = gameObject.AddComponent<EnemyHealth>();
-        eh.Init(health, HitSound);
+        eh.Init(health, HitSound, DeathSound);
         eh.OnDeath += HandleDeath;
     }
 

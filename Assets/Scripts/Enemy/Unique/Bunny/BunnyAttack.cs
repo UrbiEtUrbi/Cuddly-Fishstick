@@ -1,17 +1,20 @@
 using UnityEngine;
 
+using Ami.BroAudio;
 public class BunnyAttack : EnemyAttack
 {
     private float chargeSpeed;
     private float chargeUpTime;
     private BunnyEnemy bunnyEnemy;
     private Animator animator;
-    public void Init(float chargeSpeed, float chargeUpTime, BunnyEnemy bunnyEnemy, Animator animator)
+    SoundID attack;
+    public void Init(float chargeSpeed, float chargeUpTime, BunnyEnemy bunnyEnemy, Animator animator,SoundID attack)
     {
         this.chargeSpeed = chargeSpeed;
         this.chargeUpTime = chargeUpTime;
         this.bunnyEnemy = bunnyEnemy;
         this.animator = animator;
+        this.attack = attack;
     }
 
 
@@ -38,6 +41,7 @@ public class BunnyAttack : EnemyAttack
     {
         animator.SetBool("IsStanding", false);
         animator.SetBool("IsCharging", true);
+        attack.Play();
         gameObject.GetComponent<Rigidbody2D>().linearVelocity = bunnyEnemy.GetVectorToPlayer().normalized * chargeSpeed;
     }
 }

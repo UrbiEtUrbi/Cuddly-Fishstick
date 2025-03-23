@@ -239,6 +239,14 @@ MonoBehaviour:
     ID: 1073741825
     _sourceAsset: {fileID: 11400000, guid: 282c4d63e9b664d7dbd96099f8d6b4ec, type: 2}
     <DebugObject>k__BackingField: {fileID: 8364272980243089468}
+  deathSound:
+    ID: 1073741830
+    _sourceAsset: {fileID: 11400000, guid: 707bedd046cca47c5939214f72047504, type: 2}
+    <DebugObject>k__BackingField: {fileID: 8364272980243089468}
+  attackSound:
+    ID: 1073741831
+    _sourceAsset: {fileID: 11400000, guid: 707bedd046cca47c5939214f72047504, type: 2}
+    <DebugObject>k__BackingField: {fileID: 8364272980243089468}
   moveSpeed: 2
   stoppingDistance: 3
   runAwayDistance: 2
@@ -252,3 +260,15 @@ MonoBehaviour:
   projectileSpeed: 4
   projectileLifeTime: 2
   attackAnimator: {fileID: 1525863116378875410}
+  throwNut:
+    ID: 1073741829
+    _sourceAsset: {fileID: 11400000, guid: 707bedd046cca47c5939214f72047504, type: 2}
+    <DebugObject>k__BackingField: {fileID: 8364272980243089468}
+  fly:
+    ID: 1073741832
+    _sourceAsset: {fileID: 11400000, guid: 707bedd046cca47c5939214f72047504, type: 2}
+    <DebugObject>k__BackingField: {fileID: 8364272980243089468}
+  hit:
+    ID: 0
+    _sourceAsset: {fileID: 0}
+    <DebugObject>k__BackingField: {fileID: 8364272980243089468}

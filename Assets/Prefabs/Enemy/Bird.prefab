@@ -56,6 +56,14 @@ MonoBehaviour:
     ID: 1073741825
     _sourceAsset: {fileID: 11400000, guid: 282c4d63e9b664d7dbd96099f8d6b4ec, type: 2}
     <DebugObject>k__BackingField: {fileID: 5797208592293394158}
+  DeathSound:
+    ID: 1073741836
+    _sourceAsset: {fileID: 11400000, guid: 707bedd046cca47c5939214f72047504, type: 2}
+    <DebugObject>k__BackingField: {fileID: 5797208592293394158}
+  AttackSound:
+    ID: 1073741837
+    _sourceAsset: {fileID: 11400000, guid: 707bedd046cca47c5939214f72047504, type: 2}
+    <DebugObject>k__BackingField: {fileID: 5797208592293394158}
   OnDeath:
     m_PersistentCalls:
       m_Calls: []

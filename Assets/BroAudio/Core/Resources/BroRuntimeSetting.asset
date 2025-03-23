@@ -22,7 +22,7 @@ MonoBehaviour:
   AudioFilterSlope: 1
   DefaultAudioPlayerPoolSize: 5
   PitchSetting: 1
-  AlwaysPlayMusicAsBGM: 1
+  AlwaysPlayMusicAsBGM: 0
   DefaultBGMTransition: 4
   DefaultBGMTransitionTime: 2
   GlobalPlaybackGroup: {fileID: 11400000, guid: 3e3a30a0a50d746e4b3ca553cc3525b8, type: 2}

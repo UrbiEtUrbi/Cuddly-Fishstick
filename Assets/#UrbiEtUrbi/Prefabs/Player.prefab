@@ -4995,8 +4995,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   hitSound:
-    ID: 0
-    _sourceAsset: {fileID: 0}
+    ID: 1073741834
+    _sourceAsset: {fileID: 11400000, guid: 282c4d63e9b664d7dbd96099f8d6b4ec, type: 2}
+    <DebugObject>k__BackingField: {fileID: 7739226758064582938}
+  DeathSound:
+    ID: 1073741833
+    _sourceAsset: {fileID: 11400000, guid: 282c4d63e9b664d7dbd96099f8d6b4ec, type: 2}
     <DebugObject>k__BackingField: {fileID: 7739226758064582938}
 --- !u!114 &5766531830505408222
 MonoBehaviour:

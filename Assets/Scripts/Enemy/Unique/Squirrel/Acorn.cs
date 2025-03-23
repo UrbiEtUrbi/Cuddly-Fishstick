@@ -1,12 +1,15 @@
 using UnityEngine;
 
+using Ami.BroAudio;
 public class Acorn : MonoBehaviour
 {
     private float damage;
+    SoundID Hit;
 
-    public void SetDamage(float damage)
+    public void SetDamage(float damage, SoundID hit)
     {
         this.damage = damage;
+        Hit = hit;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -17,6 +20,7 @@ public class Acorn : MonoBehaviour
             if (damageable != null)
             {
                 damageable.TakeDamage(damage);
+                Hit.Play();
             }
 
             Destroy(gameObject);

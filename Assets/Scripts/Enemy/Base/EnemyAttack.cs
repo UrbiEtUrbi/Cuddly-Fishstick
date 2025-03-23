@@ -1,10 +1,12 @@
 using UnityEngine;
 
+
 public class EnemyAttack : MonoBehaviour
 {
     private float attackRange;
     private float attackCooldown;
     private float lastAttackTime;
+
 
     public void Init(float range, float cooldown)
     {

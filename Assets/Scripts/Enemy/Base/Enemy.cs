@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
     [Header("Health Settings")]
     [Range(1.0f, 100.0f)]
     public float maxHealth = 10.0f;
-    public SoundID soundID;
+    public SoundID soundID, deathSound, attackSound;
 
     [Header("Movement Settings")]
     [Range(0.5f, 10.0f)]
@@ -62,7 +62,7 @@ public class Enemy : MonoBehaviour
         player ??= GameObject.FindWithTag("Player");
 
         health ??= gameObject.AddComponent<EnemyHealth>();
-        health?.Init(maxHealth, soundID);
+        health?.Init(maxHealth, soundID,deathSound);
 
         movement ??= gameObject.AddComponent<EnemyMovement>();
         movement?.Init(moveSpeed, stoppingDistance);

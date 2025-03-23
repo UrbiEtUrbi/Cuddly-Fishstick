@@ -28,14 +28,14 @@ public class BirdEnemy : MonoBehaviour
     float Healh;
 
     [SerializeField]
-    SoundID HitSound;
+    SoundID HitSound, DeathSound, AttackSound;
 
     public UnityEvent OnDeath;
     private void Awake()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         var eh = gameObject.AddComponent<EnemyHealth>();
-        eh.Init(Healh, HitSound);
+        eh.Init(Healh, HitSound, DeathSound);
 
         eh.OnDeath += HandleDeath;
 
