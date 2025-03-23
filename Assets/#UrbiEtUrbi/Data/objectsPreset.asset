@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abdee15a915d34cde86471f2e2631cf5, type: 3}
+  m_Name: objectsPreset
+  m_EditorClassIdentifier: 
+  objects:
+  - name: Tree
+    prefab: {fileID: 3823270983822317922, guid: 841f3a4401ae144a985534970fadbe00, type: 3}
+    width: 4
+    height: 6
+  - name: RandomFlower
+    prefab: {fileID: 8127145532715956007, guid: c25291e9a256f4a5d80e2e8e3e113651, type: 3}
+    width: 1
+    height: 1
+  - name: RandomFlowerRing
+    prefab: {fileID: 4443854612158651175, guid: 22302749e6c0e4034a0221bbeca65b20, type: 3}
+    width: 5
+    height: 5
+  - name: RandomFlowerHorizontal
+    prefab: {fileID: 4528647411432463817, guid: 4293f6a991c824af7be6b909e20b6084, type: 3}
+    width: 5
+    height: 1
+  Density: 0.15
