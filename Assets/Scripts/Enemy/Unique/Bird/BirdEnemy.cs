@@ -31,6 +31,10 @@ public class BirdEnemy : MonoBehaviour
     SoundID HitSound, DeathSound, AttackSound;
 
     public UnityEvent OnDeath;
+
+    Vector4 GetCurrentBounds => new Vector4(Camera.main.transform.position.x, Camera.main.transform.position.x,
+        Camera.main.transform.position.y, Camera.main.transform.position.y) + Bounds;
+
     private void Awake()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -57,18 +61,19 @@ public class BirdEnemy : MonoBehaviour
         float velX = 0;
         float velY = 0;
 
+        var boundsRelative = GetCurrentBounds;
         if (horizontal)
         {
-            startX = increasing ? Bounds.x : Bounds.y;
+            startX = increasing ? boundsRelative.x : boundsRelative.y;
             velX = increasing ? 1 : -1;
-            startY = Random.Range(Bounds.z, Bounds.w) * 0.7f;
+            startY = Random.Range(boundsRelative.z, boundsRelative.w) * 0.7f;
 
         }
         else
         {
-            startY = increasing ? Bounds.z : Bounds.w;
+            startY = increasing ? boundsRelative.z : boundsRelative.w;
             velY = increasing ? 1 : -1;
-            startX = Random.Range(Bounds.x, Bounds.y) * 0.7f;
+            startX = Random.Range(boundsRelative.x, boundsRelative.y) * 0.7f;
         }
 
         transform.position = new Vector3(startX, startY, 0);
@@ -76,10 +81,12 @@ public class BirdEnemy : MonoBehaviour
         Rigidbody2D.linearVelocity = speed * new Vector2(velX, velY);
         if (velX != 0)
         {
-            animator.transform.localScale = new Vector3(velX, 1, 1);
+            animator.SetTrigger("Horizontal");
+            animator.transform.localScale = new Vector3(-velX, 1, 1);
         }
         else
         {
+            animator.SetTrigger(velY > 0 ? "Up" : "Down");
             animator.transform.localScale = new Vector3(1, 1, 1);
         }
 
@@ -95,10 +102,11 @@ public class BirdEnemy : MonoBehaviour
     Tween t;
     private void FixedUpdate()
     {
-        if(transform.position.x < Bounds.x ||
-            transform.position.x > Bounds.y ||
-            transform.position.y < Bounds.z ||
-            transform.position.y > Bounds.w){
+        var currentBounds = GetCurrentBounds;
+        if (transform.position.x < currentBounds.x ||
+            transform.position.x > currentBounds.y ||
+            transform.position.y < currentBounds.z ||
+            transform.position.y > currentBounds.w){
             gameObject.SetActive(false);
             t = Tween.Delay(Random.value * 5, Reset);
             }

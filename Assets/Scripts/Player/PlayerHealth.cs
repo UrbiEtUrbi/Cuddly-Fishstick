@@ -16,6 +16,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         this.maxHealth = maxHealth;
         currentHealth = maxHealth;
         this.soundID = soundID;
+        this.deathSound = deathSound;
     }
 
     /// <summary>

@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDamage: 1
   speed: 2
-  Bounds: {x: -7.5, y: 7.5, z: -5, w: 5}
+  Bounds: {x: -15, y: 15, z: -11, w: 11}
   animator: {fileID: 965134370988853104}
   Healh: 2
   HitSound:
@@ -128,7 +128,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.01569438, y: 0.20402649}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -138,7 +138,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.34, y: 0.2}
+  m_Size: {x: 0.6852757, y: 0.608053}
   m_EdgeRadius: 0
 --- !u!1 &6535152607412328881
 GameObject:
@@ -217,12 +217,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 244238746, guid: ab416e745246946fcbc5664b81dc096b, type: 3}
+  m_Sprite: {fileID: -141336775, guid: 8bb444c28fb9d456288cf37db83519ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
