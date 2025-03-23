@@ -3,19 +3,30 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     private float moveSpeed = 2.0f;
+
+    private float runAwaySpeed = 2.0f;
     private float stoppingDistance = 1.0f;
     private Rigidbody2D rb;
 
-    public void Init(float moveSpeed, float stoppingDistance)
+    public void Init(float moveSpeed, float stoppingDistance, float runAwaySpeed)
     {
         rb = GetComponent<Rigidbody2D>();
         this.moveSpeed = moveSpeed;
         this.stoppingDistance = stoppingDistance;
+        this.runAwaySpeed = runAwaySpeed;
     }
 
-    public void MoveTowardsPlayer(Vector2 direction)
+    public void MoveTowardsPlayer(Vector2 direction,float distance, bool runAway = false)
     {
-        rb.linearVelocity = direction * moveSpeed;   
+        if (!runAway && (rb.position + direction * Time.fixedTime * moveSpeed).magnitude > distance)
+        {
+
+            rb.linearVelocity = direction *  moveSpeed;
+        }
+        else if(runAway)
+        {
+            rb.linearVelocity = direction *runAwaySpeed;
+        }
     }
 
     public void StopMoving()

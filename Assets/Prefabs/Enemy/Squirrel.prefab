@@ -248,6 +248,7 @@ MonoBehaviour:
     _sourceAsset: {fileID: 11400000, guid: 707bedd046cca47c5939214f72047504, type: 2}
     <DebugObject>k__BackingField: {fileID: 8364272980243089468}
   moveSpeed: 2
+  runAwaySpeed: 1
   stoppingDistance: 3
   runAwayDistance: 2
   DetectionDistance: 5
@@ -267,8 +268,4 @@ MonoBehaviour:
   fly:
     ID: 1073741832
     _sourceAsset: {fileID: 11400000, guid: 707bedd046cca47c5939214f72047504, type: 2}
-    <DebugObject>k__BackingField: {fileID: 8364272980243089468}
-  hit:
-    ID: 0
-    _sourceAsset: {fileID: 0}
     <DebugObject>k__BackingField: {fileID: 8364272980243089468}

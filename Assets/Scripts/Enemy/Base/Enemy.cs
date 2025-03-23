@@ -26,6 +26,11 @@ public class Enemy : MonoBehaviour
     [Range(0.5f, 10.0f)]
     [Tooltip("Enemy movement speed")]
     public float moveSpeed = 2.0f;
+
+    [Range(0.5f, 10.0f)]
+    [Tooltip("Enemy run away speed")]
+    public float runAwaySpeed = 2.0f;
+
     [Range(0.1f, 5.0f)]
     [Tooltip("Distance at which the enemy stops following the player")]
     public float stoppingDistance = 1.0f;
@@ -65,7 +70,7 @@ public class Enemy : MonoBehaviour
         health?.Init(maxHealth, soundID,deathSound);
 
         movement ??= gameObject.AddComponent<EnemyMovement>();
-        movement?.Init(moveSpeed, stoppingDistance);
+        movement?.Init(moveSpeed, stoppingDistance,runAwaySpeed);
 
         attack ??= gameObject.AddComponent<EnemyAttack>();
         attack?.Init(attackRange, attackCooldown);
@@ -108,11 +113,11 @@ public class Enemy : MonoBehaviour
                 //enemyAnimation.FlipSprite(direction);
                 if (distanceToPlayer < runAwayDistance && moveAway)
                 {
-                    movement.MoveTowardsPlayer(-direction);
+                    movement.MoveTowardsPlayer(-direction, distanceToPlayer, true);
                 }
                 else
                 {
-                    movement.MoveTowardsPlayer(direction);
+                    movement.MoveTowardsPlayer(direction, distanceToPlayer);
                 }
 
                 if(attack.CanAttack() && attack.NeedsMoving(distanceToPlayer))
