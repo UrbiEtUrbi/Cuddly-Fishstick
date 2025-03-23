@@ -782,7 +782,8 @@ MonoBehaviour:
     ID: 268435457
     _sourceAsset: {fileID: 11400000, guid: f796c728974bd426490674803f04dcc5, type: 2}
     <DebugObject>k__BackingField: {fileID: 8700862319606178664}
-  playNextAt: 120.4
+  StopOtherMusic: 0
+  playNextAt: 120.7
 --- !u!1 &8869741762443691434
 GameObject:
   m_ObjectHideFlags: 0

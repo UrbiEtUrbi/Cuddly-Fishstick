@@ -11,6 +11,9 @@ public class LevelMusic : MonoBehaviour
     [SerializeField]
     SoundID StartMusic, Loop;
 
+    [SerializeField]
+    bool StopOtherMusic;
+
 
     [SerializeField]
     float playNextAt;
@@ -21,16 +24,15 @@ public class LevelMusic : MonoBehaviour
     {
         StartPlaying();
     }
-    private void Reset()
-    {
-        BroAudio.Stop(BroAudioType.Music, 0);
-        StartPlaying();
-    }
 
     void StartPlaying()
     {
-        
 
+
+        if (StopOtherMusic)
+        {
+            BroAudio.Stop(BroAudioType.Music, 0);
+        }
         StartMusic.Play().OnUpdate(Check);
        
       
