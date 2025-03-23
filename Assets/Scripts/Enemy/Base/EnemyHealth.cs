@@ -33,7 +33,10 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         }
         else
         {
-            soundID.Play();
+            if (soundID.IsValid())
+            {
+                soundID.Play();
+            }
         }
     }
 

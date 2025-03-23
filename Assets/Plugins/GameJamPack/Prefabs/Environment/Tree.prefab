@@ -137,8 +137,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitSound:
-    ID: 1073741825
-    _sourceAsset: {fileID: 11400000, guid: 282c4d63e9b664d7dbd96099f8d6b4ec, type: 2}
+    ID: 1073741838
+    _sourceAsset: {fileID: 11400000, guid: 707bedd046cca47c5939214f72047504, type: 2}
+    <DebugObject>k__BackingField: {fileID: 3823270983822317922}
+  DeathSound:
+    ID: 1073741839
+    _sourceAsset: {fileID: 11400000, guid: 707bedd046cca47c5939214f72047504, type: 2}
     <DebugObject>k__BackingField: {fileID: 3823270983822317922}
   health: 10
 --- !u!60 &2211937106100710678

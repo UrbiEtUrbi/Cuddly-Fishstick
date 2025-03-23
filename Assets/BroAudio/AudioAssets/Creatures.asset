@@ -441,6 +441,130 @@ MonoBehaviour:
       BPM: 0
       Beats: 0
     SnapToFullVolume: 0
+  - <Name>k__BackingField: HitTree
+    <ID>k__BackingField: 1073741838
+    MulticlipsPlayMode: 2
+    _group: {fileID: 0}
+    Clips:
+    - AudioClip: {fileID: 8300000, guid: 4acc0df6a20034bcc88240252e25da33, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    - AudioClip: {fileID: 8300000, guid: cf9865c34031b43b7bb58ba99c95bdcd, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    - AudioClip: {fileID: 8300000, guid: e9021f5124236494bbe76df0f5146b57, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    <MasterVolume>k__BackingField: 1
+    <Loop>k__BackingField: 0
+    <SeamlessLoop>k__BackingField: 0
+    <TransitionTime>k__BackingField: 0
+    <SpatialSetting>k__BackingField: {fileID: 0}
+    <Priority>k__BackingField: 128
+    <Pitch>k__BackingField: 1
+    <PitchRandomRange>k__BackingField: 0
+    <VolumeRandomRange>k__BackingField: 0
+    <RandomFlags>k__BackingField: 0
+    SeamlessTransitionType: 0
+    TransitionTempo:
+      BPM: 0
+      Beats: 0
+    SnapToFullVolume: 0
+  - <Name>k__BackingField: DestroyTree
+    <ID>k__BackingField: 1073741839
+    MulticlipsPlayMode: 0
+    _group: {fileID: 0}
+    Clips:
+    - AudioClip: {fileID: 8300000, guid: e2e065e8b6003408abfd8ebd886f637d, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    <MasterVolume>k__BackingField: 1
+    <Loop>k__BackingField: 0
+    <SeamlessLoop>k__BackingField: 0
+    <TransitionTime>k__BackingField: 0
+    <SpatialSetting>k__BackingField: {fileID: 0}
+    <Priority>k__BackingField: 128
+    <Pitch>k__BackingField: 1
+    <PitchRandomRange>k__BackingField: 0
+    <VolumeRandomRange>k__BackingField: 0
+    <RandomFlags>k__BackingField: 0
+    SeamlessTransitionType: 0
+    TransitionTempo:
+      BPM: 0
+      Beats: 0
+    SnapToFullVolume: 0
+  - <Name>k__BackingField: DestroyFlower
+    <ID>k__BackingField: 1073741840
+    MulticlipsPlayMode: 2
+    _group: {fileID: 0}
+    Clips:
+    - AudioClip: {fileID: 8300000, guid: e9ec5619adddd40979ab948496a587d7, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    - AudioClip: {fileID: 8300000, guid: 68924d7aa91bb44b99fc3b9073223b2f, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    - AudioClip: {fileID: 8300000, guid: a7146d4cf629e407d9d5f1d6d626a88d, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    - AudioClip: {fileID: 8300000, guid: ba5e0582b1ea04172912e51bfdfe07fd, type: 3}
+      Volume: 1
+      Delay: 0
+      StartPosition: 0
+      EndPosition: 0
+      FadeIn: 0
+      FadeOut: 0
+      Weight: 0
+    <MasterVolume>k__BackingField: 1
+    <Loop>k__BackingField: 0
+    <SeamlessLoop>k__BackingField: 0
+    <TransitionTime>k__BackingField: 0
+    <SpatialSetting>k__BackingField: {fileID: 0}
+    <Priority>k__BackingField: 128
+    <Pitch>k__BackingField: 1
+    <PitchRandomRange>k__BackingField: 0
+    <VolumeRandomRange>k__BackingField: 0
+    <RandomFlags>k__BackingField: 0
+    SeamlessTransitionType: 0
+    TransitionTempo:
+      BPM: 0
+      Beats: 0
+    SnapToFullVolume: 0
   Group: {fileID: 0}
   <AssetName>k__BackingField: Creatures
   _assetGUID: 707bedd046cca47c5939214f72047504

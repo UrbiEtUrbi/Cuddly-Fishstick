@@ -47,9 +47,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitSound:
-    ID: 1073741825
-    _sourceAsset: {fileID: 11400000, guid: 282c4d63e9b664d7dbd96099f8d6b4ec, type: 2}
-    <DebugObject>k__BackingField: {fileID: 8127145532715956007, guid: fce696c852d4746c0989b850570d3c13, type: 3}
+    ID: 0
+    _sourceAsset: {fileID: 0}
+    <DebugObject>k__BackingField: {fileID: 5095120100305688092}
+  DeathSound:
+    ID: 1073741840
+    _sourceAsset: {fileID: 11400000, guid: 707bedd046cca47c5939214f72047504, type: 2}
+    <DebugObject>k__BackingField: {fileID: 5095120100305688092}
   health: 1
 --- !u!212 &4304737218332013964
 SpriteRenderer:
