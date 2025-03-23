@@ -79,18 +79,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a40d96213fe816a4bb1e0f67787d7420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyTypes:
-  - prefab: {fileID: 0}
-    spawnWeight: 0
-  - prefab: {fileID: 0}
-    spawnWeight: 0
+  waves:
+  - enemyTypes:
+    - prefab: {fileID: 8364272980243089468, guid: bbbc5819181e11146893f015da19b082, type: 3}
+      spawnWeight: 1
+    enemyCount: 1
+    spawnInterval: 0
+    Objects: {fileID: 11400000, guid: 4ea4371edd7564fc78220e0042155a8d, type: 2}
+  - enemyTypes:
+    - prefab: {fileID: 8707117638656385959, guid: ecd24e5aae3a01f40a2add9292fae832, type: 3}
+      spawnWeight: 1
+    enemyCount: 1
+    spawnInterval: 0
+    Objects: {fileID: 11400000, guid: 5cc578baefd674457a9e99b380fd0289, type: 2}
   spawnPoints:
   - {fileID: 6567919471402599429}
   - {fileID: 880987839091672781}
   - {fileID: 8147658596656314232}
   - {fileID: 8733916276940156761}
-  spawnInterval: 5
-  maxEnemies: 10
+  waveDelay: 5
+  OnWaveStart:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7667103722526890936
 GameObject:
   m_ObjectHideFlags: 0

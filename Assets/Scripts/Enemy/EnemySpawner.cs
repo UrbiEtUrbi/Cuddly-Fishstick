@@ -18,12 +18,13 @@ public class EnemySpawner : MonoBehaviour
         public EnemyType[] enemyTypes;
         public int enemyCount;
         public float spawnInterval;
+        public ObjectListData Objects;
     }
 
     [SerializeField] private Wave[] waves;
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private float waveDelay = 5.0f;
-    public UnityEvent<string> OnWaveStart;
+    public UnityEvent<string, ObjectListData> OnWaveStart;
 
     private int currentWaveIndex = 0;
     private int enemiesSpawnedInWave = 0;
@@ -54,7 +55,7 @@ public class EnemySpawner : MonoBehaviour
         {
             enemiesSpawnedInWave = 0;
             nextSpawnTime = Time.time + waves[currentWaveIndex].spawnInterval;
-            OnWaveStart.Invoke($"Wave {currentWaveIndex + 1} Started!");
+            OnWaveStart.Invoke($"Wave {currentWaveIndex + 1} Started!", waves[currentWaveIndex].Objects);
             Debug.Log($"Starting Wave {currentWaveIndex + 1}");
         }
     }
